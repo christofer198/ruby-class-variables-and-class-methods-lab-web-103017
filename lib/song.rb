@@ -1,7 +1,7 @@
 require 'pry'
 
 class Song
-  @@count = 0 
+  @@count = 0
   @@artists =[]
   @@genres = []
   @@hsh = {}
