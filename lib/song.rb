@@ -28,6 +28,6 @@ class Song
     binding.pry
     @@genres.uniq
   end
-   
+
 
 end
