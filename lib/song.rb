@@ -1,7 +1,7 @@
 require 'pry'
 
 class Song
-  @@count = 0
+  @@count = 0 
   @@artists =[]
   @@genres = []
   @@hsh = {}
@@ -38,6 +38,14 @@ class Song
   end
 
   def self.artist_count
-    @@hsh
-  end
+    artist_count = {}
+   @@artists.each do |artist|
+     if !artist_count.has_key?(artist)
+       artist_count[artist] = 1
+     else
+       artist_count[artist] += 1
+     end
+   end
+   artist_count
+ end
 end
