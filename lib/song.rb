@@ -32,6 +32,6 @@ class Song
     hsh = {}
     @@genre.uniq.each{|x| hsh[x] = @@genre.count(x)}
     hsh
-  end      
+  end
 
 end
