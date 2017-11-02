@@ -27,11 +27,6 @@ class Song
   def self.genres
     @@genres.uniq
   end
-
-  def self.genre_count
-    hsh = {}
-    @@genre.uniq.each{|x| hsh[x] = @@genre.count(x)}
-    hsh
-  end      
+   
 
 end
