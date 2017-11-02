@@ -13,7 +13,7 @@ class Song
     @genre = genre
     @@count += 1
     @@artists << artist
-    @@genre << genre
+    @@genres << genre
   end
 
   def self.count
@@ -25,12 +25,12 @@ class Song
   end
 
   def self.genres
-    @@genre.uniq
+    @@genres.uniq
   end
 
   def self.genre_count
     hsh = {}
-    @@genre.uniq.each{|x| hsh[x] = @@genre.count(x)}
+    @@genres.uniq.each{|x| hsh[x] = @@genres.count(x)}
     hsh
   end
 
