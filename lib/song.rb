@@ -3,7 +3,7 @@ require 'pry'
 class Song
   @@count = 0
   @@artists =[]
-  @@genre = []
+  @@genres = []
   @@hsh = {}
 
   attr_accessor :name, :artist, :genre
