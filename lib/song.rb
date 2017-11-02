@@ -14,6 +14,7 @@ class Song
     @@count += 1
     @@artists << artist
     @@genres << genre
+    @@hsh[artist] = @@count
   end
 
   def self.count
@@ -34,4 +35,6 @@ class Song
     hsh
   end
 
+  def self.artist_count
+    hsh{}
 end
